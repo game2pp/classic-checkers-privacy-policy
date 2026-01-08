@@ -5,158 +5,171 @@
   <title>Privacy Policy - Classic Checkers Board</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <style>
     :root{
-      --bg-brown:#3A2723;
-      --card-fill:#5B3D35;
-      --card-stroke:#BCAAA4;
-      --title-gold:#F4C542;
-      --text-primary:#F2E9E4;
-      --text-muted:#D7C9C2;
-      --btn-purple:#6C56B5;
-      --btn-purple-dark:#5B46A5;
+      --bg:#0b0b0f;
+      --card:#14141a;
+      --stroke:#2a2a36;
+      --title:#ff5a5a;
+      --text:#f2f2f4;
+      --muted:#b7b7c2;
+      --accent:#ff6b6b;
+      --accent-dark:#ff4b4b;
     }
 
     body{
-      background: var(--bg-brown);
-      color: var(--text-primary);
+      background: radial-gradient(1200px 600px at 50% -10%, rgba(255,90,90,.18), transparent 60%),
+                  linear-gradient(180deg, var(--bg) 0%, #08080d 100%);
+      color: var(--text);
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container{
+      max-width: 900px;
+      padding: 40px 16px;
+      margin: auto;
     }
 
     .brand-title{
-      color: var(--title-gold);
-      font-weight: 800;
-      letter-spacing: .3px;
+      color: var(--title);
+      font-weight: 900;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .subtitle{
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 28px;
     }
 
     .policy-card{
-      background: var(--card-fill);
-      border: 1px solid var(--card-stroke);
+      background: var(--card);
+      border: 1px solid var(--stroke);
       border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,.25);
-    }
-
-    .muted{
-      color: var(--text-muted) !important;
+      padding: 28px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.45);
     }
 
     .section-title{
-      color: var(--title-gold);
-      margin-top: 18px;
+      color: var(--accent);
+      margin-top: 22px;
       font-weight: 700;
       font-size: 1.05rem;
     }
 
-    .divider{
-      border-color: rgba(188,170,164,.35);
+    p, li{
+      line-height: 1.8;
+      color: var(--text);
     }
 
-    .btn-purple{
-      background: var(--btn-purple);
+    ul{
+      padding-left: 18px;
+    }
+
+    hr{
       border: none;
-      border-radius: 14px;
-      padding: 10px 14px;
-      color: white;
-      font-weight: 700;
-    }
-    .btn-purple:hover{
-      background: var(--btn-purple-dark);
-      color: white;
+      border-top: 1px solid var(--stroke);
+      margin: 20px 0;
     }
 
-    a{ color: var(--title-gold); }
-    a:hover{ opacity:.9; }
+    footer{
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    a{
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover{
+      color: var(--accent-dark);
+    }
   </style>
 </head>
 
 <body>
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-9 col-xl-8">
 
-        <h1 class="brand-title text-center mb-2">Classic Checkers Board</h1>
-        <p class="text-center muted mb-4">Privacy Policy</p>
+  <div class="container">
 
-        <div class="policy-card p-4 p-md-5">
-          <div class="d-flex justify-content-between flex-wrap gap-2">
-            <h2 class="h4 mb-0 brand-title">Privacy Policy</h2>
-            <p class="mb-0 muted">Last updated: January 2026</p>
-          </div>
+    <h1 class="brand-title">Classic Checkers Board</h1>
+    <div class="subtitle">Privacy Policy</div>
 
-          <hr class="divider">
+    <div class="policy-card">
 
-          <p>
-            This Privacy Policy explains how <strong>Classic Checkers Board</strong> (“we”, “our”, or “us”)
-            handles information when you use our mobile application.
-          </p>
+      <p>
+        This Privacy Policy explains how <strong>Classic Checkers Board</strong>
+        handles information when you use our mobile game.
+      </p>
 
-          <div class="section-title">1. Information We Collect</div>
-          <p>
-            <strong>Classic Checkers Board does not collect, store, or share personal information.</strong>
-            We do not request or collect names, email addresses, phone numbers, precise location data, contacts,
-            or any other personally identifiable information.
-          </p>
-          <p>
-            The game can be played offline. Any game-related data (such as settings, scores, or progress)
-            is stored locally on your device only.
-          </p>
+      <p>
+        By installing or using the game, you agree to the terms described in this policy.
+      </p>
 
-          <div class="section-title">2. Third-Party Services</div>
-          <p>
-            This app does <strong>not</strong> use third-party analytics, advertising SDKs, or tracking services.
-            We do not share data with third parties.
-          </p>
+      <div class="section-title">1. Information We Collect</div>
+      <p>
+        <strong>Classic Checkers Board does not collect, store, or share personal information.</strong>
+        We do not request names, email addresses, phone numbers, precise location data,
+        or any personally identifiable information.
+      </p>
 
-          <div class="section-title">3. Advertising</div>
-          <p>
-            <strong>Classic Checkers Board does not display advertisements.</strong>
-            There are no banner ads, interstitial ads, or rewarded ads.
-          </p>
+      <div class="section-title">2. Local Game Data</div>
+      <p>
+        The game may store data locally on your device such as game settings,
+        match progress, scores, and preferences.  
+        This data never leaves your device.
+      </p>
 
-          <div class="section-title">4. Children’s Privacy</div>
-          <p>
-            This game is suitable for all ages. We do not knowingly collect personal information from children under 13.
-            Since no personal data is collected, children can use the game safely.
-          </p>
+      <div class="section-title">3. Third-Party Services</div>
+      <p>
+        This game does not use third-party analytics, tracking tools,
+        or external data collection services.
+      </p>
 
-          <div class="section-title">5. Data Security</div>
-          <p>
-            We do not transmit personal data to any server. Any app data remains on your device.
-            While no digital system can be guaranteed 100% secure, the absence of data collection greatly reduces privacy risk.
-          </p>
+      <div class="section-title">4. Advertisements</div>
+      <p>
+        Classic Checkers Board may display ads depending on the version,
+        but no personal data is collected or shared for advertising purposes.
+      </p>
 
-          <div class="section-title">6. Changes to This Policy</div>
-          <p>
-            We may update this Privacy Policy from time to time. Any changes will be posted on this page
-            with an updated “Last updated” date.
-          </p>
+      <div class="section-title">5. Children’s Privacy</div>
+      <p>
+        This game is suitable for all ages.
+        We do not knowingly collect personal information from children under 13.
+      </p>
 
-          <div class="section-title">7. Contact Us</div>
-          <p class="mb-2">
-            If you have questions about this Privacy Policy, contact us:
-          </p>
+      <div class="section-title">6. Data Security</div>
+      <p>
+        Since no personal data is collected or transmitted,
+        your privacy risk is minimal. All game data remains on your device.
+      </p>
 
-          <div class="p-3 rounded" style="background: rgba(0,0,0,.18); border: 1px solid rgba(188,170,164,.25);">
-            <div><strong>Email:</strong> support@classiccheckersboard.com</div>
-            <div><strong>Developer:</strong> Classic Board Games Studio</div>
-          </div>
+      <div class="section-title">7. Changes to This Policy</div>
+      <p>
+        This Privacy Policy may be updated from time to time.
+        Any changes will be reflected on this page.
+      </p>
 
-          <div class="d-grid d-sm-flex gap-2 mt-4">
-            <a class="btn btn-purple btn-purple" href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">
-              Back to Top
-            </a>
-          </div>
-        </div>
+      <div class="section-title">8. Contact</div>
+      <p>
+        If you have any questions about this Privacy Policy,
+        you may contact the developer through the app store listing.
+      </p>
 
-        <p class="text-center muted mt-4 mb-0">
-          © 2026 Classic Board Games Studio. All rights reserved.
-        </p>
-
-      </div>
     </div>
+
+    <footer>
+      © 2026 Classic Checkers Board. All rights reserved.
+    </footer>
+
   </div>
+
 </body>
 </html>
